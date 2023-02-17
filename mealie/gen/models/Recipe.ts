@@ -5,18 +5,19 @@
 import type { CommentOut } from './CommentOut';
 import type { Nutrition } from './Nutrition';
 import type { RecipeAsset } from './RecipeAsset';
+import type { RecipeCategoryResponse } from './RecipeCategoryResponse';
 import type { RecipeIngredient } from './RecipeIngredient';
 import type { RecipeNote } from './RecipeNote';
 import type { RecipeSettings } from './RecipeSettings';
 import type { RecipeStep } from './RecipeStep';
 
 export type Recipe = {
-    id?: number;
+    id?: string;
     name?: string;
     slug?: string;
     image?: any;
     description?: string;
-    recipeCategory?: Array<string>;
+    recipeCategory?: Array<RecipeCategoryResponse>;
     tags?: Array<string>;
     rating?: number;
     dateAdded?: string;

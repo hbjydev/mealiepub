@@ -5958,7 +5958,7 @@
         "properties": {
           "id": {
             "title": "Id",
-            "type": "integer"
+            "type": "string"
           },
           "name": {
             "title": "Name",
@@ -5980,7 +5980,7 @@
             "title": "Recipecategory",
             "type": "array",
             "items": {
-              "type": "string"
+                "$ref": "#/components/schemas/RecipeCategoryResponse"
             },
             "default": []
           },
